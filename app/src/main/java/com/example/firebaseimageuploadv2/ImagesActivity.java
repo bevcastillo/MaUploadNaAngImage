@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ImagesActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
-    private ImageAdapter mAdapater;
+    private ImageAdapter mAdapter;
 
     private ProgressBar mProgressCircle;
 
@@ -51,9 +51,9 @@ public class ImagesActivity extends AppCompatActivity {
                     mUploads.add(upload);
                 }
 
-                mAdapater = new ImageAdapter(ImagesActivity.this, mUploads);
+                mAdapter = new ImageAdapter(ImagesActivity.this, mUploads);
 
-                mRecyclerView.setAdapter(mAdapater);
+                mRecyclerView.setAdapter(mAdapter);
                 mProgressCircle.setVisibility(View.INVISIBLE);
             }
 
